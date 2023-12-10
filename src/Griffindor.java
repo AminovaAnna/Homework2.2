@@ -41,21 +41,4 @@ public class Griffindor extends Hogwarts {
                 ", honor=" + honor +
                 ", brave=" + brave;
     }
-
-    public int sumG() {
-        return getNobility() + getHonor() + getBrave();
-    }
-
-    public void compare(Griffindor other) {
-        int thisPower = sumG();
-        int otherPower = other.sumG();
-        if (thisPower > otherPower) {
-            System.out.println(getName() + " "+ getSurname() + " - лучший ученик Гриффиндор, " + sumG() + " баллов магии");
-        } else if (thisPower == otherPower) {
-            System.out.println("баллы магии равны " + sumG() + ". " + getName() + " "+ getSurname() + " и " +
-                    other.getName() + " "+ other.getSurname() + " лучшие ученики Гриффиндор");
-        } else {
-            System.out.println(other.getName() + " "+ other.getSurname() + "- лучший ученик Гриффиндор - " + other.sumG() + " баллов магии");
-        }
-    }
 }

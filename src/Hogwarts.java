@@ -43,22 +43,6 @@ public class Hogwarts {
     public void setTransgressionDistance(int transgressionDistance) {
         this.transgressionDistance = transgressionDistance;
     }
-public int sumH(){
-        return getSpellPower() + getTransgressionDistance();
-}
-public void compareAll(Hogwarts other){
-    int thisPower = sumH();
-    int otherPower = other.sumH();
-    if (thisPower > otherPower) {
-        System.out.println(getName() + " "+ getSurname() + " - лучший ученик Хогвартс, " + sumH() + " баллов магии");
-    } else if (thisPower == otherPower) {
-        System.out.println("баллы магии равны " + sumH() + ". " + getName() + " "+ getSurname() + " и " +
-                other.getName() + " "+ other.getSurname() + " лучшие ученики Хогвартс");
-    } else {
-        System.out.println(other.getName() + " "+ other.getSurname() + "- лучший ученик Хогвартс - " + other.sumH() + " баллов магии");
-    }
-}
-
 
     @Override
     public String toString() {
